@@ -1,0 +1,87 @@
+/* Written by Srdan Tesinic */
+
+@font-face {
+    font-family: 'Playwrite US Trad';
+    src: url('fonts/PlaywriteUSTrad-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/RobotoMono-Regular.ttf') format('truetype');
+}
+
+html {
+    font-family: 'Roboto', Times, serif;
+}
+
+body {
+    background: url(background.png) repeat 0 0;
+    background-color: #EBEBEB;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    line-height: 1.4;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.sitebody {
+    margin: 20px;
+    padding: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%; 
+}
+
+h1 {
+    color: black;
+    font-size: 50px;
+    text-align: center;
+}
+
+#section-title {
+    color: salmon;
+    font-size: 35px;
+}
+
+ul ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+ul li {
+    font-size: 20px;
+    list-style-type: square;
+    margin-bottom: 5px;
+}
+
+ul ul li {
+    font-size: 15px;
+    list-style-type: circle;
+    margin-bottom: 10px;
+}
+
+.banner {
+    position: relative;
+    width: 101%;
+    margin: -8px;
+}
+
+.banner-img {
+    display: block;
+    width: 100%;
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 70px;
+}
+
+.banner-text {
+    font-size: 50px;
+}
