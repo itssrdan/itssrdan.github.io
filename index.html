@@ -4,19 +4,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Srdan's Website Project</title>
-    <link rel="stylesheet" href="stylestest.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var sitebody = document.getElementById("sitebody");
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+                sitebody.style.marginLeft = "0";
+            } else {
+                sidebar.style.width = "250px";
+                sitebody.style.marginLeft = "260px";
+            }
+        }
+    </script>
 </head>
 <body>
-    <div class="banner">
-        <img src="cheesecakebanner.jpg" alt="Top Banner" class="banner-img">
-        <span class="banner-text" style="font-family: 'Playwrite US Trad', sans-serif;">
-            <b>Srdan's Culinary Corner</b>
-        </span>
+<img id="open-btn" src="burger.png" alt="Menu" onclick="toggleSidebar()" style="width: 70px; cursor: pointer; position:absolute; margin-left:20px; margin-top:20px;">
+    <div class="banner" style="color:black";>
+        <p class=bannertext style="font-family: 'Playwrite US Trad', sans-serif;">Srdan's &nbsp;Culinary &nbsp;Corner</p>
+        <img src="cheesecakelineart.png" alt="Banner Image">
     </div>
-<div class="sitebody">
+
+    <div id="sidebar" class="sidebar">
+        <img class="close-btn" src="cross.png" alt="Close" onclick="toggleSidebar()" style="width: 80px; cursor: pointer;">
+        <a href="#">Home</a>
+        <a href="#section-title1">Cakes</a>
+        <a href="#section-title2">Sandwiches</a>
+        <a href="#section-title3">About Me</a>
+    </div>
+    <div class="sitebody">
+        <h3>Introduction</h3>
       <p>Welcome to My Website! <br><br>I've made this website as a project that has helped me learn how to write HTML and CSS. All the code was written by me in Visual Studio Code, as well as most of the text, although the rest of the intro and some descriptive text was written with the help of a GPT. This is my first time working in VSC and first time using iframe and custom written code so keep your expectations low, as it might not be the best looking or the fastest website you have seen today. That being said, expect some cheesy puns and wording, and I hope you like the website. <br><br> Welcome to a delightful corner of the internet dedicated to celebrating two of the most versatile and beloved foods: cheesecake and sandwiches. Whether you have a sweet tooth or a craving for something savory, you've come to the right place. Dive into a world of flavors as I share my favorite foods and culinary experiences. From savory to sweet, each dish has a story and a special place in my heart. Whether you're a fellow food enthusiast or someone looking to discover new tastes, my website offers a delightful journey through my personal gastronomic adventures.</p>
 
-    <h3 id="section-title">1.Cheesecakes</h3>
+    <h3 id="section-title1">1.Cakes</h3>
     <h2><a href="https://en.wikipedia.org/wiki/Cheesecake">Cheesecake:</a> The Sweetest Whey to My Heart</h2>
     <p>Cheesecake boasts a rich history that dates back to ancient Greece, where it was served to athletes during the first Olympic Games in 776 BC. The Romans adopted and adapted the Greek recipe, creating a version called "libum" for religious offerings. Throughout the Middle Ages, cheesecake recipes spread across Europe, evolving with regional ingredients and techniques. The Renaissance saw the addition of sugar in England, making the dessert more refined. In the 18th century, European immigrants brought cheesecake to America, where cream cheese, invented in New York in the 1870s, became a key ingredient, leading to the famous New York-style cheesecake. Today, cheesecake has countless variations worldwide, from the light and airy Japanese soufflé cheesecake to Italy's ricotta-based version, remaining a cherished dessert across cultures and celebrations.</p>
 
@@ -65,7 +86,7 @@
 
     <p>EDIT 10/08: My company just bought me a Costco cheesecake for my birthday today, and holy moly is it good. My wife didn't really like it because it is "too cheesy and yogurty tasting", but that is exactly the reason I love it so much. $18 for a whole (big) cheesecake, taste wise 9/10, value wise 10/10.</p>
 
-    <h3 id="section-title">2.   Sandwiches</h3>
+    <h3 id="section-title2">2.   Sandwiches</h3>
     <h2><a href="https://en.wikipedia.org/wiki/BLT">BLT</a>: The Sandwich That's Bacon Me Crazy</h2>
     <p>The BLT (Bacon, Lettuce, and Tomato sandwich) has its roots in the late 19th and early 20th centuries, but it didn't gain widespread popularity until the post-World War II era. With the advent of supermarkets in the 1950s, pre-packaged bacon and lettuce became more accessible, making the BLT a convenient and tasty choice for American households. By the 1960s, the BLT had cemented its place as a classic American sandwich, known for its simple yet delicious combination. Over time, variations like the BLAT (with avocado) have emerged, but the original BLT remains a beloved favorite.</p>
     <br>
@@ -81,7 +102,7 @@
         <li>Cut into Triangles</li>
     </ul>
 
-    <p>If I had to pick one BLT that stood out to me for the creativity and the overall taste, it would have to be the BLT I had almost every day when working at <b>Model Bakery</b> in Saint Helena, California</p>
+    <p>If I had to pick one BLT that stood out to me for the creativity and the overall taste, it would have to be the BLT I had almost every day when working at <b>The Model Bakery</b> in Saint Helena, California</p>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3122.2576668892884!2d-122.46996579999998!3d38.5047679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80845097fb22bfc1%3A0x2a9a4c8a13b4e915!2sThe%20Model%20Bakery!5e0!3m2!1sen!2sus!4v1740249991631!5m2!1sen!2sus" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -95,6 +116,16 @@
     <p>A place that really impressed me, both with the quality of food as well as the creativity, was a place called <b>ZOMO</b> in Denver. I had their mini Bánh Mì appetizers (my wife had the vegetarian ones) and for my entré  e I had a Viet Burger, which was probably the best Viatnamese food I have ever had.</p>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.8135980578736!2d-104.9877995!3d39.653909399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c8103b49d13c7%3A0x14b3ab8d8b1428f!2sZOMO!5e0!3m2!1sen!2sus!4v1740250534675!5m2!1sen!2sus" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<h3 id="section-title3">About Me</h3>
+<p>My name is Srdan Tesinic, and I am a tech enthusiast. In my free time, I love building PCs, fixing all sorts of electronics, and learning new things. A couple of months ago, I challenged myself to learn to write HTML, CSS, and JavaScript as part of expanding my knowledge about coding. While not perfect, this website has given me lots of hours of fun and joy, and it has encouraged me to learn more than I ever thought I would. This website is still a work in progress, and you might see more changes coming to it, but I will start slowly moving towards my next project.</p>
+<div style="text-align: center;">
+    <a href="https://github.com/itssrdan" style="font-size: 30px; color: black; text-decoration: none; margin: 0 10px;">GitHub</a>
+    <a href="https://github.com/itssrdan" style="font-size: 30px; color: black; text-decoration: none; margin: 0 10px;">Resume</a>
+</div>
+</div>
+<div class="footer">
+    <img src="cat.jpg" alt="Footer Gif">&nbsp;&nbsp;Hope you've enjoyed my website!&nbsp;&nbsp;<img src="cat.jpg" alt="Footer Gif">
 </div>
 </body>
 </html>

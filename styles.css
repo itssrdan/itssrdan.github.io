@@ -1,0 +1,154 @@
+/* Written by Srdan Tesinic */
+@font-face {
+    font-family: 'Playwrite US Trad';
+    src: url('fonts/PlaywriteUSTrad-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/RobotoMono-Regular.ttf') format('truetype');
+}
+
+.banner {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding:10px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner img {
+    height: 200px;
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-bottom:50px;
+}
+
+.bannertext {
+    font-size: 60px;
+    margin-top:50px;
+    
+}
+
+.sidebar {
+    width: 0px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgb(255, 155, 118);
+    padding-top: 20px;
+    transition: 0.3s;
+    overflow-x: hidden;
+    font-size: 30px;
+}
+.sidebar a {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    display: block;
+    color: rgb(0, 0, 0);
+}
+.sidebar a:hover {
+    background-color: transparent;
+    border-left: 10px solid cadetblue;
+    padding-left: 10px; 
+}
+
+
+body {
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%23ffffff' fill-opacity='0.22'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+span {
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 70px;
+}
+
+h3 {
+    font-size: 50px;
+    color:cadetblue;
+    font-family: 'Playwrite US Trad', sans-serif !important;
+    text-align:center;
+    text-decoration:underline;
+    text-decoration-thickness: 3px;
+}
+
+.sitebody {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h2 {
+    color:coral;
+}
+
+p {
+    font-size: 20px;
+}
+
+ul ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+ul li {
+    font-size: 20px;
+    list-style-type: square;
+    margin-bottom: 5px;
+}
+
+ul ul li {
+    font-size: 15px;
+    list-style-type: circle;
+    margin-bottom: 10px;
+}
+
+a {
+    color:coral;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    background: rgb(255, 189, 165);
+    color: black;
+    margin-top: 40px;
+}
+
+.footer img {
+ height:30px;
+ margin-top: 3px;
+ font-family: 'Roboto', sans-serif;
+}
